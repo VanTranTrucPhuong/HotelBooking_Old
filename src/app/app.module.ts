@@ -8,6 +8,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HotelItemComponent } from './templates/hotel-item/hotel-item.component';
 import { NavbarBottomComponent } from './templates/navbar-bottom/navbar-bottom.component';
 import { HeaderComponent } from './templates/header/header.component';
+import { ExploreItemComponent } from './templates/explore-item/explore-item.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { HeaderComponent } from './templates/header/header.component';
     HomeComponent,
     HotelItemComponent,
     NavbarBottomComponent,
-    HeaderComponent
+    HeaderComponent,
+    ExploreItemComponent
   ],
   imports: [
     BrowserModule,

@@ -69,6 +69,10 @@ header, form{
     margin-right: 0.75rem;
 }
 
+.input__date{
+    padding: .375rem .75rem;
+}
+
 .form__duration{
     /* max-width: 30%; */
 }
@@ -98,5 +102,19 @@ h2.heading{
 }
 
 .item{
-    padding: 0 5px;
+    padding: 0 0.5rem;
+}
+
+.explore{
+    width: 100%;
+}
+
+.explore__content{
+    overflow: auto;
+    white-space: nowrap;
+}
+
+.explore__item{
+    display: inline-block;
+    /* margin: 0 0.5rem; */
 }

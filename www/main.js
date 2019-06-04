@@ -79,7 +79,7 @@ var AppRoutingModule = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "\n.main{\n    position: absolute;\n    top: 20%;\n    z-index: 9;\n}"
+module.exports = ".main{\n    position: absolute;\n    top: 20%;\n    z-index: 9;\n    margin-bottom: 100px;\n}"
 
 /***/ }),
 
@@ -149,12 +149,14 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _templates_hotel_item_hotel_item_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./templates/hotel-item/hotel-item.component */ "./src/app/templates/hotel-item/hotel-item.component.ts");
 /* harmony import */ var _templates_navbar_bottom_navbar_bottom_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./templates/navbar-bottom/navbar-bottom.component */ "./src/app/templates/navbar-bottom/navbar-bottom.component.ts");
 /* harmony import */ var _templates_header_header_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./templates/header/header.component */ "./src/app/templates/header/header.component.ts");
+/* harmony import */ var _templates_explore_item_explore_item_component__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./templates/explore-item/explore-item.component */ "./src/app/templates/explore-item/explore-item.component.ts");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+
 
 
 
@@ -174,7 +176,8 @@ var AppModule = /** @class */ (function () {
                 _pages_home_home_component__WEBPACK_IMPORTED_MODULE_3__["HomeComponent"],
                 _templates_hotel_item_hotel_item_component__WEBPACK_IMPORTED_MODULE_6__["HotelItemComponent"],
                 _templates_navbar_bottom_navbar_bottom_component__WEBPACK_IMPORTED_MODULE_7__["NavbarBottomComponent"],
-                _templates_header_header_component__WEBPACK_IMPORTED_MODULE_8__["HeaderComponent"]
+                _templates_header_header_component__WEBPACK_IMPORTED_MODULE_8__["HeaderComponent"],
+                _templates_explore_item_explore_item_component__WEBPACK_IMPORTED_MODULE_9__["ExploreItemComponent"]
             ],
             imports: [
                 _angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"],
@@ -199,7 +202,7 @@ var AppModule = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "#custom-search-input{\n    border: solid 1px #E4E4E4;\n    border-radius: 6px;\n    background-color: #fff;\n}\n\n#custom-search-input input{\n    border: 0;\n    box-shadow: none;\n}\n\n#custom-search-input button{\n    margin: 2px 0 0 0;\n    background: none;\n    box-shadow: none;\n    border: 0;\n    color: #666666;\n    padding: 0 8px 0 10px;\n}\n\n#custom-search-input button:hover{\n    border: 0;\n    box-shadow: none;\n    border-left: solid 1px #ccc;\n}\n\n#custom-search-input .glyphicon-search{\n    font-size: 23px;\n}\n\n.form{\n    padding: 0.5em 5%;\n}\n\n.card{\n    border-radius: 1em;\n}\n\n.info-text{\n    text-align: left;\n    width: 100%;\n}\n\nheader, form{\n    padding: 2em 5%;\n}\n\n.form-group{\n    margin-bottom: 20px;\n}\n\n.check-in{\n    margin-left: unset;\n}\n\n.item-duration{\n    max-width: 30%;\n}\n\nh2.heading{\n    font-size: 18px;\n    text-transform: uppercase;\n    font-weight: 300;\n    text-align: left;\n    color: #506982;\n    border-bottom: 1px solid #506982;\n    padding-bottom: 3px;\n    margin-bottom: 20px;\n}\n\n.btn-find-hotel{\n    background-color: #545dff;\n    border-color: #545dff;\n    margin-top: 10%;\n    padding: 10px 0;\n    width: 100%;\n    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);\n}\n\n.title__recent-searches{\n    padding: 1rem;\n}\n\n.item{\n    padding: 0 5px;\n}"
+module.exports = "#custom-search-input{\n    border: solid 1px #E4E4E4;\n    border-radius: 6px;\n    background-color: #fff;\n}\n\n#custom-search-input input{\n    border: 0;\n    box-shadow: none;\n}\n\n#custom-search-input button{\n    margin: 2px 0 0 0;\n    background: none;\n    box-shadow: none;\n    border: 0;\n    color: #666666;\n    padding: 0 8px 0 10px;\n}\n\n#custom-search-input button:hover{\n    border: 0;\n    box-shadow: none;\n    border-left: solid 1px #ccc;\n}\n\n#custom-search-input .glyphicon-search{\n    font-size: 23px;\n}\n\n.form{\n    padding: 0.5em 5%;\n}\n\n.form-control{\n    padding: unset;\n}\n\n.form__label{\n    margin: 0.75rem 0;\n}\n\n.form__icon{\n    color: #fc6f81;\n}\n\n.card{\n    border-radius: 1em;\n}\n\n.info-text{\n    text-align: left;\n    width: 100%;\n}\n\nheader, form{\n    padding: 2em 5%;\n}\n\n.form-group{\n    margin-bottom: 20px;\n}\n\n.check-in{\n    margin-left: unset;\n}\n\n.form__date{\n    margin-right: 0.75rem;\n}\n\n.input__date{\n    padding: .375rem .75rem;\n}\n\n.form__duration{\n    /* max-width: 30%; */\n}\n\nh2.heading{\n    font-size: 18px;\n    text-transform: uppercase;\n    font-weight: 300;\n    text-align: left;\n    color: #506982;\n    border-bottom: 1px solid #506982;\n    padding-bottom: 3px;\n    margin-bottom: 20px;\n}\n\n.btn-find-hotel{\n    background-color: #545dff;\n    border-color: #545dff;\n    margin-top: 10%;\n    padding: 10px 0;\n    width: 100%;\n    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);\n}\n\n.title__recent-searches{\n    padding: 1rem;\n}\n\n.item{\n    padding: 0 0.5rem;\n}\n\n.explore{\n    width: 100%;\n}\n\n.explore__content{\n    overflow: auto;\n    white-space: nowrap;\n}\n\n.explore__item{\n    display: inline-block;\n    /* margin: 0 0.5rem; */\n}"
 
 /***/ }),
 
@@ -210,7 +213,7 @@ module.exports = "#custom-search-input{\n    border: solid 1px #E4E4E4;\n    bor
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"home container mx-auto\">\n  <div class=\"card home__find-hotel\">\n    <form action=\"\" class=\"form\">\n      <!--  Details -->\n      <div class=\"form-group\">\n        <div class=\"grid\">\n          <div class=\"col-1-4 col-1-4-sm\">\n            <div class=\"controls\">\n              <label><i class=\"fa fa-map-pin\"></i>&nbsp;&nbsp;Destination</label>\n              <div id=\"custom-search-input\">\n                <div class=\"input-group col-md-12\">\n                  <input type=\"text\" class=\"form-control input-lg\" placeholder=\"NewYork\" />\n                  <span class=\"input-group-btn\">\n                    <button class=\"btn btn-info btn-lg\" type=\"button\">\n                      <a href=\"#\"><i class=\"fa fa-search\"></i></a>\n                    </button>\n                  </span>\n                </div>\n              </div>\n            </div>\n          </div>\n          <div class=\"col-1-4 col-1-4-sm\">\n            <div class=\"controls\">\n              <div class=\"row check-in\">\n                <div class=\"col-8 col-md-6 item\">\n                  <label for=\"arrive\" class=\"label-date\"><i class=\"fa fa-calendar\"></i>&nbsp;&nbsp;Check-in date</label>\n                  <input type=\"date\" id=\"arrive\" class=\"floatLabel form-control\" name=\"arrive\" />\n                </div>\n                <div class=\"col-3 col-md-6 item item-duration\">\n                  <label for=\"depart\" class=\"label-date\">&nbsp;&nbsp;Duration</label>\n                  <input type=\"date\" id=\"depart\" class=\"floatLabel form-control\" name=\"depart\" />\n                </div>\n              </div>  \n            </div>\n          </div>\n          <div class=\"col-1-4 col-1-4-sm\">\n            <div class=\"controls\">\n              <label><i class=\"fa fa-tags\"></i>&nbsp;&nbsp;Total guests & Rooms</label>\n              <div id=\"custom-search-input\">\n                <div class=\"input-group col-md-12\">\n                  <input type=\"text\" class=\"form-control input-lg\" placeholder=\"NewYork\" />\n                  <span class=\"input-group-btn\">\n                    <button class=\"btn btn-info btn-lg\" type=\"button\">\n                      <a href=\"#\"><i class=\"fa fa-sort\"></i></a>\n                    </button>\n                  </span>\n                </div>\n              </div>\n            </div>\n          </div>\n          <div class=\"col-1-4 col-1-4-sm\">\n            <div class=\"controls\">\n              <button class=\"btn btn-primary btn-find-hotel\">Find hotel</button>\n            </div>\n          </div>\n        </div>\n      </div> <!-- /.form-group -->\n    </form>\n  </div>\n  <div class=\"recent-searches\">\n    <h5 class=\"title__recent-searches\">Recent Researches</h5>\n    <div class=\"container-fluid\">\n      <div class=\"row\">\n        <div class=\"col-6 col-md-6 item\">\n          <app-hotel-item></app-hotel-item>\n        </div>\n        <div class=\"col-6 col-md-6 item\">\n          <app-hotel-item></app-hotel-item>\n        </div>\n        <div class=\"col-6 col-md-6 item\">\n          <app-hotel-item></app-hotel-item>\n        </div>\n        <div class=\"col-6 col-md-6 item\">\n          <app-hotel-item></app-hotel-item>\n        </div>\n      </div>\n    </div>\n  </div>\n</div>"
+module.exports = "<div class=\"home container mx-auto\">\n  <div class=\"card home__find-hotel\">\n    <form action=\"\" class=\"form\">\n      <!--  Details -->\n      <div class=\"form-group\">\n        <div class=\"grid\">\n          <div class=\"col-1-4 col-1-4-sm\">\n            <div class=\"controls\">\n              <label class=\"form__label\"><i class=\"form__icon fa fa-map-pin\"></i>&nbsp;&nbsp;Destination</label>\n              <div id=\"custom-search-input\">\n                <div class=\"input-group col-md-12\">\n                  <input type=\"text\" class=\"form-control input-search\" placeholder=\"NewYork\" />\n                  <span class=\"input-group-btn\">\n                    <button class=\"btn btn-info btn-lg\" type=\"button\">\n                      <a href=\"#\"><i class=\"fa fa-search\"></i></a>\n                    </button>\n                  </span>\n                </div>\n              </div>\n            </div>\n          </div>\n          <div class=\"col-1-4 col-1-4-sm\">\n            <div class=\"controls\">\n              <div class=\"row check-in\">\n                <div class=\"col-8 col-md-6 p-0 form__date\">\n                  <label class=\"form__label\"><i class=\"form__icon fa fa-calendar\"></i>&nbsp;&nbsp;Check-in date</label>\n                  <input type=\"date\" class=\"form-control input__date\"/>\n                </div>\n                <div class=\"col-3 col-md-6 p-0 form__duration\">\n                  <label class=\"form__label\">Duration</label>\n                  <input type=\"date\" class=\"floatLabel form-control\"/>\n                </div>\n              </div>  \n            </div>\n          </div>\n          <div class=\"col-1-4 col-1-4-sm\">\n            <div class=\"controls\">\n              <label class=\"form__label\"><i class=\"form__icon fa fa-tags\"></i>&nbsp;&nbsp;Total guests & Rooms</label>\n              <div id=\"custom-search-input\">\n                <div class=\"input-group col-md-12\">\n                  <input type=\"text\" class=\"form-control\" placeholder=\"2 guests & 1 rooms\" />\n                  <span class=\"input-group-btn\">\n                    <button class=\"btn btn-info btn-lg\" type=\"button\">\n                      <a href=\"#\"><i class=\"fa fa-sort\"></i></a>\n                    </button>\n                  </span>\n                </div>\n              </div>\n            </div>\n          </div>\n          <div class=\"col-1-4 col-1-4-sm\">\n            <div class=\"controls\">\n              <button class=\"btn btn-primary btn-find-hotel\">Find hotel</button>\n            </div>\n          </div>\n        </div>\n      </div> <!-- /.form-group -->\n    </form>\n  </div>\n  <div class=\"recent-searches\">\n    <h5 class=\"title__recent-searches\">Recent Researches</h5>\n    <div class=\"container-fluid\">\n      <div class=\"row\">\n        <div class=\"col-6 col-md-6 item\">\n          <app-hotel-item></app-hotel-item>\n        </div>\n        <div class=\"col-6 col-md-6 item\">\n          <app-hotel-item></app-hotel-item>\n        </div>\n        <div class=\"col-6 col-md-6 item\">\n          <app-hotel-item></app-hotel-item>\n        </div>\n        <div class=\"col-6 col-md-6 item\">\n          <app-hotel-item></app-hotel-item>\n        </div>\n      </div>\n    </div>\n  </div>\n  <hr>\n  <div class=\"explore\">\n      <h5 class=\"title__recent-searches\">Explore with QueenHotel</h5>\n      <div class=\"container-fluid\">\n          <div class=\"explore__content\">\n            <app-explore-item class=\"explore__item\"></app-explore-item>\n            <app-explore-item class=\"explore__item\"></app-explore-item>\n            <app-explore-item class=\"explore__item\"></app-explore-item>\n            <app-explore-item class=\"explore__item\"></app-explore-item>\n            <app-explore-item class=\"explore__item\"></app-explore-item>\n            <app-explore-item class=\"explore__item\"></app-explore-item>\n          </div>\n      </div>\n  </div>\n</div>"
 
 /***/ }),
 
@@ -255,6 +258,69 @@ var HomeComponent = /** @class */ (function () {
 
 /***/ }),
 
+/***/ "./src/app/templates/explore-item/explore-item.component.css":
+/*!*******************************************************************!*\
+  !*** ./src/app/templates/explore-item/explore-item.component.css ***!
+  \*******************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "img{\n    max-width: 100%;\n    display: block;\n}\n\n.explore__card{\n    border: unset;\n    margin-right: 1rem;\n}\n\n.explore__card .explore__image{\n    height: 80px;\n    border-radius: calc(0.75rem - 0.5px);\n    position: relative;\n}\n\n.item__text{\n    position: absolute;\n    left: 1rem;\n    bottom: 0rem;\n    z-index: 2;\n}\n\n#overlay_explore {\n    position: absolute;    \n    /* width: 100%; */\n    height: 100%;\n    top: 0;\n    left: 0;\n    right: 0;\n    bottom: 0;\n    background-color: rgba(0,0,0,0.1);\n    border-radius: calc(0.75rem - 0.5px);\n    cursor: pointer;\n}"
+
+/***/ }),
+
+/***/ "./src/app/templates/explore-item/explore-item.component.html":
+/*!********************************************************************!*\
+  !*** ./src/app/templates/explore-item/explore-item.component.html ***!
+  \********************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<div class=\"card explore__card\">\n  <img class=\"explore__image\"\n    src=\"./assets/images/HaLong.jpg\"\n    alt=\"Card image\">\n    <div id=\"overlay_explore\"></div>\n  <p class=\"item__text text-white\">Ha Long Bay</p>\n</div>"
+
+/***/ }),
+
+/***/ "./src/app/templates/explore-item/explore-item.component.ts":
+/*!******************************************************************!*\
+  !*** ./src/app/templates/explore-item/explore-item.component.ts ***!
+  \******************************************************************/
+/*! exports provided: ExploreItemComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ExploreItemComponent", function() { return ExploreItemComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+var ExploreItemComponent = /** @class */ (function () {
+    function ExploreItemComponent() {
+    }
+    ExploreItemComponent.prototype.ngOnInit = function () {
+    };
+    ExploreItemComponent = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+            selector: 'app-explore-item',
+            template: __webpack_require__(/*! ./explore-item.component.html */ "./src/app/templates/explore-item/explore-item.component.html"),
+            styles: [__webpack_require__(/*! ./explore-item.component.css */ "./src/app/templates/explore-item/explore-item.component.css")]
+        }),
+        __metadata("design:paramtypes", [])
+    ], ExploreItemComponent);
+    return ExploreItemComponent;
+}());
+
+
+
+/***/ }),
+
 /***/ "./src/app/templates/header/header.component.css":
 /*!*******************************************************!*\
   !*** ./src/app/templates/header/header.component.css ***!
@@ -273,7 +339,7 @@ module.exports = "img{\n    max-width: 100%;\n    display: block;\n}\n\n.header_
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<header>\n  <div class=\"header__image\">\n    <div id=\"overlay\"></div>\n    <img src=\"../../../assets/images/tivkumb_0.jpg\" alt=\"\" class=\"\">\n  </div>\n  <div class=\"header__text text-white\">\n    <h5>PhHotel</h5>\n  </div>\n  <div class=\"header__icon\">\n    <i class=\"fa fa-bars text-white\"></i>\n  </div>\n</header>"
+module.exports = "<header>\n  <div class=\"header__image\">\n    <div id=\"overlay\"></div>\n    <img src=\"./assets/images/tivkumb_0.jpg\" alt=\"\" class=\"\">\n  </div>\n  <div class=\"header__text text-white\">\n    <h5>NEC Hotel</h5>\n  </div>\n  <div class=\"header__icon\">\n    <i class=\"fa fa-bars text-white\"></i>\n  </div>\n</header>"
 
 /***/ }),
 
@@ -336,7 +402,7 @@ module.exports = ".card{\n    border: unset;\n}\n\n.card-body{\n    padding: 1.2
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"card\">\n  <img class=\"card-img-top item_image\"\n    src=\"./../../../assets/images/Mandarin-Oriental-Barcelona-5-star-luxury-hotel-accomodation-on-famous-street-passeige-de-gracia-in-the-centre-of-the-city.jpg\"\n    alt=\"Card image\">\n  <div class=\"card-body\">\n    <h5 class=\"card-title\">Charlotte Hotel</h5>\n    <div class=\"item__info\">\n      <div class=\"price__item\">\n        <p class=\"price\">200.000 USD</p>\n      </div>\n      <div class=\"item__rating\">\n        <span class=\"fa fa-star checked\"></span>\n        <span class=\"fa fa-star checked\"></span>\n        <span class=\"fa fa-star checked\"></span>\n        <span class=\"fa fa-star unchecked\"></span>\n        <span class=\"fa fa-star unchecked\"></span>\n      </div>\n    </div>\n    <p class=\"card-text\">Some example text.</p>\n  </div>\n</div>"
+module.exports = "<div class=\"card\">\n  <img class=\"card-img-top item_image\"\n    src=\"./assets/images/Mandarin-Oriental-Barcelona-5-star-luxury-hotel-accomodation-on-famous-street-passeige-de-gracia-in-the-centre-of-the-city.jpg\"\n    alt=\"Card image\">\n  <div class=\"card-body\">\n    <h5 class=\"card-title\">Charlotte Hotel</h5>\n    <div class=\"item__info\">\n      <div class=\"price__item\">\n        <p class=\"price\">200.000 USD</p>\n      </div>\n      <div class=\"item__rating\">\n        <span class=\"fa fa-star checked\"></span>\n        <span class=\"fa fa-star checked\"></span>\n        <span class=\"fa fa-star checked\"></span>\n        <span class=\"fa fa-star unchecked\"></span>\n        <span class=\"fa fa-star unchecked\"></span>\n      </div>\n    </div>\n    <p class=\"card-text\">Some example text.</p>\n  </div>\n</div>"
 
 /***/ }),
 
