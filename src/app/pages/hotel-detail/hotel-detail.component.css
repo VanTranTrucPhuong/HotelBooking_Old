@@ -121,3 +121,33 @@ hr.line{
     right: 5px;
 }
 /* End Rating & Reviews */
+
+/* Amenities */
+
+.amenites__content{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+
+.amenities__item{
+    padding-top: 20px;
+    text-align: center;
+    width: 85px;
+    height: 85px;
+    border: 1px solid rgb(70, 70, 70);
+}
+
+.icon, .icon-name{
+    color: #4D4DC7;
+}
+
+.icon{
+    font-size: 25px;
+}
+
+.icon-name{
+    font-size: 14px;
+    margin: 0;
+}
+/* End Amenities */
