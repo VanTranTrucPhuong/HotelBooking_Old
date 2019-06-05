@@ -9,6 +9,7 @@ import { HotelItemComponent } from './templates/hotel-item/hotel-item.component'
 import { NavbarBottomComponent } from './templates/navbar-bottom/navbar-bottom.component';
 import { HeaderComponent } from './templates/header/header.component';
 import { ExploreItemComponent } from './templates/explore-item/explore-item.component';
+import { HotelDetailComponent } from './pages/hotel-detail/hotel-detail.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { ExploreItemComponent } from './templates/explore-item/explore-item.comp
     HotelItemComponent,
     NavbarBottomComponent,
     HeaderComponent,
-    ExploreItemComponent
+    ExploreItemComponent,
+    HotelDetailComponent
   ],
   imports: [
     BrowserModule,
